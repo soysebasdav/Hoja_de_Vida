@@ -135,24 +135,35 @@ export default function Home() {
                     <span className="text-foreground">sebasdavgong@gmail.com</span>
                   </a>
                 </div>
+                  <div className="flex justify-center gap-4 pt-4 animate-fade-in-up animation-delay-600">
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                    >
+                      <a href="/CV-Sebastian-Gonzalez.pdf" download>
+                        <Download className="w-5 h-5 mr-2" />
+                        Descargar CV
+                      </a>
+                    </Button>
 
-                <div className="flex justify-center gap-4 pt-4 animate-fade-in-up animation-delay-600">
-                  <Button 
-                    size="lg" 
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
-                  >
-                    <Download className="w-5 h-5 mr-2" />
-                    Descargar CV
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
-                  >
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    Contactar
-                  </Button>
-                </div>
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
+                    >
+                      <a
+                        href="https://wa.me/573006789583?text=Hola%20Sebasti%C3%A1n,%20vi%20tu%20CV%20y%20quiero%20contactarte."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="w-5 h-5 mr-2" />
+                        Contactar
+                      </a>
+
+                    </Button>
+                  </div>
               </div>
             </div>
           </div>
@@ -336,7 +347,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-cyan-300">Ingeniería de Sistemas</h3>
                 <p className="text-xl text-foreground/80 font-semibold">Universidad EAN</p>
                 <Badge className="bg-gradient-to-r from-cyan-500/20 to-magenta-500/20 text-cyan-300 border-cyan-400/30">
-                  2018 – 2023
+                  2019 – Actualidad
                 </Badge>
                 <p className="text-foreground/70 pt-4">
                   Requisitos académicos finalizados. <span className="text-cyan-400 font-semibold">En espera de expedición del título</span>.
@@ -377,19 +388,34 @@ export default function Home() {
               ¿Interesado en colaborar? <span className="gradient-text font-bold">¡Conectemos!</span>
             </p>
             <div className="flex justify-center gap-6">
-              <Button 
+              <Button
+                asChild
                 size="lg"
                 className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
               >
-                <Github className="w-5 h-5 mr-2" />
-                GitHub
+                <a
+                  href="https://github.com/soysebasdav"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-5 h-5 mr-2" />
+                  GitHub
+                </a>
               </Button>
-              <Button 
+
+              <Button
+                asChild
                 size="lg"
                 className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
               >
-                <Linkedin className="w-5 h-5 mr-2" />
-                LinkedIn
+                <a
+                  href="https://www.linkedin.com/in/sebastian-david-gonzalez-gutierrez-077890255/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-5 h-5 mr-2" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
             <p className="text-sm text-foreground/50 pt-6">
