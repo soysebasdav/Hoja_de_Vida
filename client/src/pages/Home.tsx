@@ -10,27 +10,30 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Briefcase, 
-  Code, 
-  Globe, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Briefcase,
+  Code,
+  Globe,
   Database,
   Smartphone,
-  MessageSquare,
   GraduationCap,
   Languages,
   Download,
   Github,
   Linkedin,
-  ExternalLink
+  ExternalLink,
 } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
+
+  // Base URL para que funcione en GitHub Pages (/Hoja_de_Vida/) y en local (/)
+  const base = import.meta.env.BASE_URL;
+  const asset = (p: string) => `${base}${p.replace(/^\/+/, "")}`; // quita "/" inicial si existe
 
   const skills = {
     languages: [
@@ -38,19 +41,24 @@ export default function Home() {
       { name: "Dart (Flutter)", level: 85, icon: Smartphone },
       { name: "JavaScript", level: 80, icon: Globe },
       { name: "Python", level: 75, icon: Code },
-      { name: "SQL", level: 80, icon: Database }
+      { name: "SQL", level: 80, icon: Database },
     ],
     frameworks: [
       { name: "Unity (VR)", category: "Realidad Virtual" },
       { name: "Flutter", category: "Desarrollo Móvil" },
       { name: "Desarrollo Web", category: "Frontend" },
-      { name: "Chatbots", category: "IA & Automatización" }
+      { name: "Chatbots", category: "IA & Automatización" },
     ],
     tools: [
-      "Git & GitHub", "Linux", "Power BI", 
-      "Azure SQL", "MySQL", "PostgreSQL", 
-      "HTML", "CSS"
-    ]
+      "Git & GitHub",
+      "Linux",
+      "Power BI",
+      "Azure SQL",
+      "MySQL",
+      "PostgreSQL",
+      "HTML",
+      "CSS",
+    ],
   };
 
   const experience = [
@@ -64,9 +72,9 @@ export default function Home() {
         "Desarrollo web front-end con integración de componentes y optimización de conversión",
         "Diseño e integración de chatbots web para automatización",
         "Implementación de soluciones end-to-end desde arquitectura hasta producción",
-        "Gestión de versiones, entregas y soporte post-lanzamiento"
+        "Gestión de versiones, entregas y soporte post-lanzamiento",
       ],
-      image: "/images/vr-development.png"
+      image: asset("images/vr-development.png"),
     },
     {
       title: "Production Support Engineer",
@@ -75,35 +83,35 @@ export default function Home() {
       highlights: [
         "Soporte y mantenimiento de sistemas en producción",
         "Análisis y resolución de incidencias técnicas",
-        "Automatización de procesos y gestión de bases de datos"
+        "Automatización de procesos y gestión de bases de datos",
       ],
-      image: "/images/web-tech.png"
-    }
+      image: asset("images/web-tech.png"),
+    },
   ];
 
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Background Pattern */}
-      <div 
+      <div
         className="fixed inset-0 opacity-30 pointer-events-none"
         style={{
-          backgroundImage: "url('/images/tech-pattern.png')",
+          backgroundImage: `url('${asset("images/tech-pattern.png")}')`,
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
-        <div 
+        <div
           className="absolute inset-0 opacity-40"
           style={{
-            backgroundImage: "url('/images/hero-background.png')",
+            backgroundImage: `url('${asset("images/hero-background.png")}')`,
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
           }}
         />
-        
+
         <div className="container relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="glass-strong rounded-3xl p-8 md:p-12 lg:p-16 shadow-2xl">
@@ -114,55 +122,56 @@ export default function Home() {
                 <p className="text-2xl md:text-3xl text-cyan-300 font-semibold animate-fade-in-up animation-delay-200">
                   Ingeniero de Sistemas – Programador Senior
                 </p>
-                
+
                 <div className="flex flex-wrap justify-center gap-4 pt-6 animate-fade-in-up animation-delay-400">
                   <div className="flex items-center gap-2 glass rounded-full px-4 py-2">
                     <MapPin className="w-5 h-5 text-cyan-400" />
                     <span className="text-foreground">Bogotá, Colombia</span>
                   </div>
-                  <a 
-                    href="tel:+573006789583" 
+                  <a
+                    href="tel:+573006789583"
                     className="flex items-center gap-2 glass rounded-full px-4 py-2 hover:glass-strong transition-all duration-300 hover:scale-105"
                   >
                     <Phone className="w-5 h-5 text-cyan-400" />
                     <span className="text-foreground">+57 300 678 9583</span>
                   </a>
-                  <a 
-                    href="mailto:sebasdavgong@gmail.com" 
+                  <a
+                    href="mailto:sebasdavgong@gmail.com"
                     className="flex items-center gap-2 glass rounded-full px-4 py-2 hover:glass-strong transition-all duration-300 hover:scale-105"
                   >
                     <Mail className="w-5 h-5 text-cyan-400" />
                     <span className="text-foreground">sebasdavgong@gmail.com</span>
                   </a>
                 </div>
-                  <div className="flex justify-center gap-4 pt-4 animate-fade-in-up animation-delay-600">
-                    <Button
-                      asChild
-                      size="lg"
-                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
-                    >
-                      <a href="/CV-Sebastian-Gonzalez.pdf" download>
-                        <Download className="w-5 h-5 mr-2" />
-                        Descargar CV
-                      </a>
-                    </Button>
 
-                    <Button
-                      asChild
-                      size="lg"
-                      variant="outline"
-                      className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
+                <div className="flex justify-center gap-4 pt-4 animate-fade-in-up animation-delay-600">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                  >
+                    <a href={asset("CV-Sebastian-Gonzalez.pdf")} download>
+                      <Download className="w-5 h-5 mr-2" />
+                      Descargar CV
+                    </a>
+                  </Button>
+
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
+                  >
+                    <a
+                      href="https://wa.me/573006789583?text=Hola%20Sebasti%C3%A1n,%20vi%20tu%20CV%20y%20quiero%20contactarte."
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <a
-                        href="https://wa.me/573006789583?text=Hola%20Sebasti%C3%A1n,%20vi%20tu%20CV%20y%20quiero%20contactarte."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-5 h-5 mr-2" />
-                        Contactar
-                      </a>
-                    </Button>
-                  </div>
+                      <ExternalLink className="w-5 h-5 mr-2" />
+                      Contactar
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -178,11 +187,21 @@ export default function Home() {
                 Perfil Profesional
               </h2>
               <p className="text-lg text-foreground/90 leading-relaxed text-center max-w-4xl mx-auto">
-                Ingeniero de Sistemas con experiencia como <span className="text-cyan-400 font-semibold">Programador Senior y Líder Técnico</span>, 
-                especializado en el desarrollo y despliegue de soluciones tecnológicas en <span className="text-cyan-400 font-semibold">Realidad Virtual (VR)</span>, 
-                <span className="text-cyan-400 font-semibold"> aplicaciones móviles</span> y <span className="text-cyan-400 font-semibold">aplicaciones web</span>. 
-                Amplia experiencia en proyectos productivos end-to-end, desde el diseño de arquitectura hasta el despliegue en producción. 
-                Capacidad para liderar equipos técnicos, coordinar con clientes y entregar soluciones funcionales de alto impacto.
+                Ingeniero de Sistemas con experiencia como{" "}
+                <span className="text-cyan-400 font-semibold">
+                  Programador Senior y Líder Técnico
+                </span>
+                , especializado en el desarrollo y despliegue de soluciones tecnológicas
+                en{" "}
+                <span className="text-cyan-400 font-semibold">
+                  Realidad Virtual (VR)
+                </span>
+                , <span className="text-cyan-400 font-semibold">aplicaciones móviles</span>{" "}
+                y <span className="text-cyan-400 font-semibold">aplicaciones web</span>.
+                Amplia experiencia en proyectos productivos end-to-end, desde el diseño
+                de arquitectura hasta el despliegue en producción. Capacidad para
+                liderar equipos técnicos, coordinar con clientes y entregar soluciones
+                funcionales de alto impacto.
               </p>
             </Card>
           </div>
@@ -196,24 +215,24 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
               Experiencia Profesional
             </h2>
-            
+
             <div className="space-y-8">
               {experience.map((job, index) => (
-                <Card 
+                <Card
                   key={index}
                   className="glass-strong border-cyan-400/20 rounded-3xl overflow-hidden shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500 animate-fade-in-up"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="md:col-span-1 relative h-64 md:h-auto">
-                      <img 
-                        src={job.image} 
+                      <img
+                        src={job.image}
                         alt={job.title}
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-magenta-500/20" />
                     </div>
-                    
+
                     <div className="md:col-span-2 p-6 md:p-8">
                       <div className="flex items-start justify-between mb-4">
                         <div>
@@ -229,7 +248,7 @@ export default function Home() {
                           {job.period}
                         </Badge>
                       </div>
-                      
+
                       <ul className="space-y-3">
                         {job.highlights.map((highlight, idx) => (
                           <li key={idx} className="flex items-start gap-3 text-foreground/80">
@@ -263,7 +282,7 @@ export default function Home() {
               </h3>
               <div className="space-y-6">
                 {skills.languages.map((skill, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="space-y-2"
                     onMouseEnter={() => setHoveredSkill(skill.name)}
@@ -277,11 +296,14 @@ export default function Home() {
                       <span className="text-cyan-400 font-bold">{skill.level}%</span>
                     </div>
                     <div className="h-3 glass rounded-full overflow-hidden">
-                      <div 
+                      <div
                         className="h-full bg-gradient-to-r from-cyan-500 to-magenta-500 rounded-full transition-all duration-700 ease-out"
-                        style={{ 
-                          width: hoveredSkill === skill.name ? `${skill.level}%` : '0%',
-                          boxShadow: hoveredSkill === skill.name ? '0 0 20px rgba(0, 217, 255, 0.5)' : 'none'
+                        style={{
+                          width: hoveredSkill === skill.name ? `${skill.level}%` : "0%",
+                          boxShadow:
+                            hoveredSkill === skill.name
+                              ? "0 0 20px rgba(0, 217, 255, 0.5)"
+                              : "none",
                         }}
                       />
                     </div>
@@ -298,7 +320,7 @@ export default function Home() {
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {skills.frameworks.map((framework, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="glass rounded-2xl p-6 hover:glass-strong transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/30"
                   >
@@ -319,7 +341,7 @@ export default function Home() {
               </h3>
               <div className="flex flex-wrap gap-3">
                 {skills.tools.map((tool, index) => (
-                  <Badge 
+                  <Badge
                     key={index}
                     className="glass text-foreground border-cyan-400/30 px-4 py-2 text-base hover:glass-strong hover:scale-110 transition-all duration-300 cursor-default"
                   >
@@ -349,7 +371,8 @@ export default function Home() {
                   2019 – Actualidad
                 </Badge>
                 <p className="text-foreground/70 pt-4">
-                  Requisitos académicos finalizados. <span className="text-cyan-400 font-semibold">En espera de expedición del título</span>.
+                  Requisitos académicos finalizados.{" "}
+                  <span className="text-cyan-400 font-semibold">En espera de expedición del título</span>.
                 </p>
               </div>
             </Card>
@@ -392,11 +415,7 @@ export default function Home() {
                 size="lg"
                 className="glass border-cyan-400/50 text-foreground hover:glass-strong rounded-full px-8 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
               >
-                <a
-                  href="https://github.com/soysebasdav"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/soysebasdav" target="_blank" rel="noopener noreferrer">
                   <Github className="w-5 h-5 mr-2" />
                   GitHub
                 </a>
