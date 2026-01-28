@@ -121,7 +121,7 @@ export default function Home() {
                   SEBASTIÁN DAVID GONZÁLEZ GUTIÉRREZ
                 </h1>
                 <p className="text-2xl md:text-3xl text-cyan-300 font-semibold animate-fade-in-up animation-delay-200">
-                  Ingeniero de Sistemas – Programador Senior
+                  Ingeniero de Sistemas
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4 pt-6 animate-fade-in-up animation-delay-400">
