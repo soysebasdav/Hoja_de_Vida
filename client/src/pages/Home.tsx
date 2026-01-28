@@ -39,7 +39,7 @@ export default function Home() {
     languages: [
       { name: "JavaScript", level: 90, icon: Globe },
       { name: "C# (Unity)", level: 90, icon: Code },
-      { name: "Java", level: 90, icon: Code },
+      { name: "Java", level: 90, icon: Globe },
       { name: "Python", level: 85, icon: Code },
       { name: "SQL", level: 80, icon: Database },
       { name: "Dart (Flutter)", level: 75, icon: Smartphone },
