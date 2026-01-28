@@ -191,13 +191,14 @@ export default function Home() {
                 <span className="text-cyan-400 font-semibold">
                   Programador Senior y Líder Técnico
                 </span>
-                , especializado en el desarrollo y despliegue de soluciones tecnológicas
+                , enfocado en el desarrollo y despliegue de soluciones tecnológicas con prioridad 
                 en{" "}
                 <span className="text-cyan-400 font-semibold">
-                  Realidad Virtual (VR)
+                  aplicaciones con IA incorporada (automatización y chatbots)
                 </span>
-                , <span className="text-cyan-400 font-semibold">aplicaciones móviles</span>{" "}
-                y <span className="text-cyan-400 font-semibold">aplicaciones web</span>.
+                , <span className="text-cyan-400 font-semibold">aplicaciones web</span>{" "}
+                , <span className="text-cyan-400 font-semibold">aplicaciones móviles multiplataforma</span>
+                y <span className="text-cyan-400 font-semibold">aplicaciones móviles multiplataforma</span>.
                 Amplia experiencia en proyectos productivos end-to-end, desde el diseño
                 de arquitectura hasta el despliegue en producción. Capacidad para
                 liderar equipos técnicos, coordinar con clientes y entregar soluciones
