@@ -196,9 +196,9 @@ export default function Home() {
                 <span className="text-cyan-400 font-semibold">
                   aplicaciones con IA incorporada (automatización y chatbots)
                 </span>
-                , <span className="text-cyan-400 font-semibold">aplicaciones web</span>{" "}
+                , <span className="text-cyan-400 font-semibold">aplicaciones web</span>
                 , <span className="text-cyan-400 font-semibold">aplicaciones móviles multiplataforma 
-                </span>
+                </span>{" "}
                 y <span className="text-cyan-400 font-semibold">Realidad Virtual (VR)</span>.
                 Amplia experiencia en proyectos productivos end-to-end, desde el diseño
                 de arquitectura hasta el despliegue en producción. Capacidad para
