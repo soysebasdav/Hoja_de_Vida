@@ -40,10 +40,12 @@ export default function Home() {
       { name: "JavaScript", level: 90, icon: Globe },
       { name: "Java", level: 90, icon: Globe },
       { name: "C# (Unity)", level: 90, icon: Code },
+      { name: "PHP", level: 85, icon: Code },
       { name: "Python", level: 85, icon: Code },
       { name: "SQL", level: 80, icon: Database },
       { name: "Dart (Flutter)", level: 75, icon: Smartphone },
     ],
+
     frameworks: [
       { name: "Chatbots", category: "IA & Automatización" },
       { name: "Desarrollo Web", category: "Frontend" },
