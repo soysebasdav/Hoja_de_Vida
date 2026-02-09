@@ -180,14 +180,14 @@ export default function Home() {
                     className="bg-gradient-to-r from-magenta-500 to-purple-600 hover:from-magenta-600 hover:to-purple-700 text-white font-semibold rounded-full px-8 shadow-lg hover:shadow-magenta-500/50 transition-all duration-300"
                   >
                     <a
-                      href={asset("Carta-Presentacion.pdf")}
-                      download="Carta-Presentacion-Sebastian-Gonzalez.pdf"
+                      href={asset("Carta-Presentacion-Sebastian.pdf")}
+                      download="Carta-Presentacion-Sebastian.pdf"
                     >
                       <Download className="w-5 h-5 mr-2" />
                       Descargar Carta
                     </a>
                   </Button>
-
+                  
                   <Button
                     asChild
                     size="lg"
