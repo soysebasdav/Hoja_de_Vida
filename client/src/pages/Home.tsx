@@ -68,12 +68,18 @@ export default function Home() {
       company: "Braco Estudio",
       period: "Enero 2025 – Enero 2026",
       highlights: [
-        "Dirección técnica de aplicaciones VR con Unity (C#) para entornos educativos y empresariales",
-        "Desarrollo de aplicaciones móviles multiplataforma con Flutter (Dart)",
+        // Principal (Web: Front/Back + PHP + BD + Producción)
+        "Desarrollo web full-stack (Backend/Frontend) con foco en estabilidad, rendimiento y mantenibilidad",
+        "Implementación de backend (PHP) e integración con bases de datos SQL (PostgreSQL/MySQL) para funcionalidades web",
+        "Soporte y operación post-lanzamiento: diagnóstico por logs, corrección de incidencias y despliegues controlados a producción",
+
+        // Lo demás (sin quitar nada, solo reordenado)
         "Desarrollo web front-end con integración de componentes y optimización de conversión",
         "Diseño e integración de chatbots web para automatización",
         "Implementación de soluciones end-to-end desde arquitectura hasta producción",
         "Gestión de versiones, entregas y soporte post-lanzamiento",
+        "Dirección técnica de aplicaciones VR con Unity (C#) para entornos educativos y empresariales",
+        "Desarrollo de aplicaciones móviles multiplataforma con Flutter (Dart)",
       ],
       image: asset("images/vr-development.png"),
     },
@@ -82,9 +88,10 @@ export default function Home() {
       company: "Movizzon",
       period: "Febrero 2024 – Agosto 2024",
       highlights: [
+        // Principal (BD + Soporte)
+        "Automatización de procesos y gestión de bases de datos",
         "Soporte y mantenimiento de sistemas en producción",
         "Análisis y resolución de incidencias técnicas",
-        "Automatización de procesos y gestión de bases de datos",
       ],
       image: asset("images/web-tech.png"),
     },
