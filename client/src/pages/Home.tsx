@@ -47,21 +47,30 @@ export default function Home() {
     ],
 
     frameworks: [
+      { name: "Desarrollo Web Full-Stack", category: "Backend & Frontend" },
+      { name: "PHP (Backend)", category: "Backend" },
       { name: "Chatbots", category: "IA & Automatización" },
-      { name: "Desarrollo Web", category: "Frontend" },
+      { name: "Soporte en Producción", category: "Operación / Incidentes" },
       { name: "Unity (VR)", category: "Realidad Virtual" },
       { name: "Flutter", category: "Desarrollo Móvil" },
     ],
     tools: [
+      // Principales (Web + BD + Soporte)
       "Git & GitHub",
       "Linux",
-      "Power BI",
-      "Azure SQL",
-      "MySQL",
       "PostgreSQL",
+      "MySQL",
+      "SQL",
+      "APIs REST",
       "HTML",
       "CSS",
+      "JavaScript",
+
+      // Complementarias
+      "Azure SQL",
+      "Power BI",
     ],
+
   };
 
   const experience = [
