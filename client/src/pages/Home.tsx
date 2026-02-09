@@ -188,24 +188,25 @@ export default function Home() {
                 Perfil Profesional
               </h2>
               <p className="text-lg text-foreground/90 leading-relaxed text-center max-w-4xl mx-auto">
-                Ingeniero de Sistemas con experiencia como{" "}
+                Ingeniero de Sistemas orientado a{" "}
                 <span className="text-cyan-400 font-semibold">
-                  Programador Senior y Líder Técnico
+                  desarrollo web full-stack (Backend/Frontend)
                 </span>
-                , enfocado en el desarrollo y despliegue de soluciones tecnológicas con prioridad 
-                en{" "}
+                , con enfoque principal en{" "}
                 <span className="text-cyan-400 font-semibold">
-                  aplicaciones con IA incorporada (automatización y chatbots)
+                  backend, PHP y gestión de bases de datos (SQL/PostgreSQL/MySQL)
                 </span>
-                , <span className="text-cyan-400 font-semibold">aplicaciones web</span>
-                , <span className="text-cyan-400 font-semibold">aplicaciones móviles multiplataforma 
-                </span>{" "}
-                y <span className="text-cyan-400 font-semibold">Realidad Virtual (VR)</span>.
-                Amplia experiencia en proyectos productivos end-to-end, desde el diseño
-                de arquitectura hasta el despliegue en producción. Capacidad para
-                liderar equipos técnicos, coordinar con clientes y entregar soluciones
-                funcionales de alto impacto.
+                . Experiencia en{" "}
+                <span className="text-cyan-400 font-semibold">
+                  soporte y operación de sistemas en producción
+                </span>
+                , incluyendo análisis de incidencias, diagnóstico por logs, estabilización del
+                servicio y automatización de tareas operativas. Capacidad para diseñar e
+                implementar soluciones end-to-end, integrando APIs/servicios, manteniendo
+                buenas prácticas de versionamiento y entregas controladas a producción, con
+                enfoque en disponibilidad, rendimiento y mantenibilidad.
               </p>
+
             </Card>
           </div>
         </div>
