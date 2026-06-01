@@ -47,8 +47,9 @@ export default function Home() {
     ],
 
     frameworks: [
-      { name: "Desarrollo Web Full-Stack", category: "Backend & Frontend" },
-      { name: "PHP (Backend)", category: "Backend" },
+      { name: "Desarrollo de Aplicaciones End-to-End", category: "Backend / Frontend / Sistemas" },
+      { name: "Backend con PHP", category: "Backend" },
+      { name: "AI-first & Automatización", category: "IA / Procesos / Productividad" },
       { name: "Chatbots", category: "IA & Automatización" },
       { name: "Soporte en Producción", category: "Operación / Incidentes" },
       { name: "Unity (VR)", category: "Realidad Virtual" },
@@ -79,14 +80,15 @@ export default function Home() {
       company: "Braco Estudio",
       period: "Enero 2025 – Enero 2026",
       highlights: [
-        // Principal (Web: Front/Back + PHP + BD + Producción)
-        "Desarrollo web full-stack (Backend/Frontend) con foco en estabilidad, rendimiento y mantenibilidad",
-        "Implementación de backend (PHP) e integración con bases de datos SQL (PostgreSQL/MySQL) para funcionalidades web",
+        // Principal (Aplicaciones + Backend + IA + BD + Producción)
+        "Desarrollo de aplicaciones end-to-end con foco en estabilidad, rendimiento y mantenibilidad",
+        "Implementación de backend en PHP e integración con bases de datos SQL/PostgreSQL/MySQL",
+        "Aplicación de enfoque AI-first para automatización de procesos, optimización de flujos y mejora de soluciones tecnológicas",
         "Soporte y operación post-lanzamiento: diagnóstico por logs, corrección de incidencias y despliegues controlados a producción",
 
         // Lo demás (sin quitar nada, solo reordenado)
-        "Desarrollo web front-end con integración de componentes y optimización de conversión",
-        "Diseño e integración de chatbots web para automatización",
+        "Desarrollo front-end con integración de componentes y optimización de experiencia de usuario",
+        "Diseño e integración de chatbots para automatización",
         "Implementación de soluciones end-to-end desde arquitectura hasta producción",
         "Gestión de versiones, entregas y soporte post-lanzamiento",
         "Dirección técnica de aplicaciones VR con Unity (C#) para entornos educativos y empresariales",
@@ -219,23 +221,28 @@ export default function Home() {
                 Perfil Profesional
               </h2>
               <p className="text-lg text-foreground/90 leading-relaxed text-center max-w-4xl mx-auto">
-                Ingeniero de Sistemas orientado a{" "}
+                Ingeniero de Sistemas orientado al{" "}
                 <span className="text-cyan-400 font-semibold">
-                  desarrollo web full-stack (Backend/Frontend)
+                  desarrollo de aplicaciones end-to-end
                 </span>
-                , con enfoque principal en{" "}
+                , con enfoque{" "}
+                <span className="text-cyan-400 font-semibold">AI-first</span>{" "}
+                aplicado a la automatización, optimización y mejora de procesos tecnológicos.
+                Experiencia en{" "}
                 <span className="text-cyan-400 font-semibold">
-                  backend, PHP y gestión de bases de datos (SQL/PostgreSQL/MySQL)
+                  backend, PHP y gestión de bases de datos SQL/PostgreSQL/MySQL
                 </span>
-                . Experiencia en{" "}
+                , así como en integración de APIs, servicios y soluciones operativas.
+                Experiencia en{" "}
                 <span className="text-cyan-400 font-semibold">
                   soporte y operación de sistemas en producción
                 </span>
                 , incluyendo análisis de incidencias, diagnóstico por logs, estabilización del
-                servicio y automatización de tareas operativas. Capacidad para diseñar e
-                implementar soluciones end-to-end, integrando APIs/servicios, manteniendo
-                buenas prácticas de versionamiento y entregas controladas a producción, con
-                enfoque en disponibilidad, rendimiento y mantenibilidad.
+                servicio y automatización de tareas operativas. Capacidad para diseñar,
+                implementar y mantener aplicaciones de negocio, sistemas internos y
+                herramientas digitales, asegurando buenas prácticas de versionamiento,
+                entregas controladas a producción, disponibilidad, rendimiento y
+                mantenibilidad.
               </p>
 
             </Card>
