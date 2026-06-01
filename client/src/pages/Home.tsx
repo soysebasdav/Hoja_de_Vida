@@ -410,7 +410,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-cyan-300">Ingeniería de Sistemas</h3>
                 <p className="text-xl text-foreground/80 font-semibold">Universidad EAN</p>
                 <Badge className="bg-gradient-to-r from-cyan-500/20 to-magenta-500/20 text-cyan-300 border-cyan-400/30">
-                  2019 – Actualidad
+                  2020 – Actualidad
                 </Badge>
                 <p className="text-foreground/70 pt-4">
                   Estudiante Último Semestre.{" "}
