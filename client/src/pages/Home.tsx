@@ -413,8 +413,8 @@ export default function Home() {
                   2019 – Actualidad
                 </Badge>
                 <p className="text-foreground/70 pt-4">
-                  Requisitos académicos finalizados.{" "}
-                  <span className="text-cyan-400 font-semibold">En espera de expedición del título</span>.
+                  Estudiante Último Semestre.{" "}
+                  <span className="text-cyan-400 font-semibold">Con disponibilidad</span>.
                 </p>
               </div>
             </Card>
